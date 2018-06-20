@@ -30,6 +30,8 @@ public class QuestionCreatorFragment extends Fragment {
     @BindView(R.id.third_wrong_answer_edittext)
     protected EditText thirdwrongAnswer;
 
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,6 +51,9 @@ public class QuestionCreatorFragment extends Fragment {
 
     @OnClick(R.id.save_question_button)
     protected void addQuestion() {
+
+        String questionTitle = question.getText().toString()
+        String correct
 
 
     }
