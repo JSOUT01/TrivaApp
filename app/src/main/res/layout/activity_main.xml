@@ -52,7 +52,7 @@
     <FrameLayout
         android:id="@+id/fragment_holder"
         android:layout_width="0dp"
-        android:layout_height="519dp"
+        android:layout_height="0dp"
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/delete_quiz_button"
         app:layout_constraintEnd_toEndOf="parent"

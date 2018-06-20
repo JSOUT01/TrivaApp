@@ -2,45 +2,57 @@ package com.example.jamessoutherland.trivaapp;
 
 public class Question {
 
-    private String Question;
-    private String CorrectAnswer;
-    private String WrongAnswerOne;
-    private String WrongAnswerTwo;
-    private String WrongAnswerThree;
-    private String WrongAnswerFour;
+    private String questionTitle;
+    private String correctAnswer;
+    private String firstWrongAnswer;
+    private String secondWrongAnswer;
+    private String thirdWrongAnswer;
 
-    public String getQuestion() {
-        return Question;
+    public Question(String questionTitle, String correctAnswer, String firstWrongAnswer, String secondWrongAnswer, String thirdWrongAnswer) {
+        this.questionTitle = questionTitle;
+        this.correctAnswer = correctAnswer;
+        this.firstWrongAnswer = firstWrongAnswer;
+        this.secondWrongAnswer = secondWrongAnswer;
+        this.thirdWrongAnswer = thirdWrongAnswer;
+    }
+
+    public String getQuestionTitle() {
+        return questionTitle;
+    }
+
+    public void setQuestionTitle(String questionTitle) {
+        this.questionTitle = questionTitle;
     }
 
     public String getCorrectAnswer() {
-        return CorrectAnswer;
+        return correctAnswer;
     }
 
-    public String getWrongAnswerOne() {
-        return WrongAnswerOne;
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
     }
 
-    public String getWrongAnswerTwo() {
-        return WrongAnswerTwo;
+    public String getFirstWrongAnswer() {
+        return firstWrongAnswer;
     }
 
-    public String getWrongAnswerThree() {
-        return WrongAnswerThree;
+    public void setFirstWrongAnswer(String firstWrongAnswer) {
+        this.firstWrongAnswer = firstWrongAnswer;
     }
 
-    public String getWrongAnswerFour() {
-        return WrongAnswerFour;
+    public String getSecondWrongAnswer() {
+        return secondWrongAnswer;
     }
 
-    public Question(String question, String correctAnswer, String wrongAnswerOne, String wrongAnswerTwo, String wrongAnswerThree, String wrongAnswerFour) {
-        Question = question;
-        CorrectAnswer = correctAnswer;
-        WrongAnswerOne = wrongAnswerOne;
-        WrongAnswerTwo = wrongAnswerTwo;
-        WrongAnswerThree = wrongAnswerThree;
-        WrongAnswerFour = wrongAnswerFour;
+    public void setSecondWrongAnswer(String secondWrongAnswer) {
+        this.secondWrongAnswer = secondWrongAnswer;
+    }
 
+    public String getThirdWrongAnswer() {
+        return thirdWrongAnswer;
+    }
 
+    public void setThirdWrongAnswer(String thirdWrongAnswer) {
+        this.thirdWrongAnswer = thirdWrongAnswer;
     }
 }
