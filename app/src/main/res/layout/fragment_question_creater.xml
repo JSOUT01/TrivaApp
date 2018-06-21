@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray">
-
+    android:background="@android:color/darker_gray"
+    android:clickable="true">
     <EditText
         android:id="@+id/question_edittext"
         android:layout_width="0dp"
@@ -37,6 +37,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:elevation="0dp"
         android:ems="10"
         android:hint="@string/first_wrong_answer_goes_here"
         android:inputType="textPersonName"
